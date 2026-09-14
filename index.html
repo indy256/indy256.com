@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f7f8fa" />
+    <meta name="description" content="Simple tools by indy256. Open the PDF editor to arrange, merge, and edit PDF pages privately in your browser." />
+    <title>indy256 — Simple browser tools</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='10' fill='%237460db'/%3E%3Cpath d='m15 13-7 7 7 7m10-14 7 7-7 7' fill='none' stroke='white' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <svg class="icon-library" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <symbol id="i-code" viewBox="0 0 24 24"><path d="m8 6-6 6 6 6m8-12 6 6-6 6m-3-15-2 18" /></symbol>
+      <symbol id="i-file" viewBox="0 0 24 24"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9zM14 3v6h6M8 13h8M8 17h5" /></symbol>
+      <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14m-6-6 6 6-6 6" /></symbol>
+      <symbol id="i-shield" viewBox="0 0 24 24"><path d="m12 3 8 3v6c0 5-8 9-8 9s-8-4-8-9V6zM8 12l3 3 5-6" /></symbol>
+      <symbol id="i-grid" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1.5" /><rect x="14" y="3" width="7" height="7" rx="1.5" /><rect x="3" y="14" width="7" height="7" rx="1.5" /><rect x="14" y="14" width="7" height="7" rx="1.5" /></symbol>
+      <symbol id="i-download" viewBox="0 0 24 24"><path d="M12 3v13m-5-5 5 5 5-5M4 16v4a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-4" /></symbol>
+    </svg>
+
+    <header class="site-header">
+      <a class="brand" href="./" aria-label="indy256 home"><span class="brand-mark"><svg aria-hidden="true"><use href="#i-code" /></svg></span>indy256<span class="brand-dot">.</span></a>
+      <span class="header-note"><span class="status-dot"></span>Simple tools for everyday tasks</span>
+      <a class="header-link" href="#tools">Explore tools <svg aria-hidden="true"><use href="#i-arrow" /></svg></a>
+    </header>
+
+    <main id="main">
+      <section class="intro" aria-labelledby="intro-title">
+        <p class="eyebrow">SIMPLE. USEFUL. IN YOUR BROWSER.</p>
+        <h1 id="intro-title">Little tools.<br><span>Less busywork.</span></h1>
+        <p>A simpler way to get everyday things done.<br>Start with your documents, right in your browser.</p>
+      </section>
+
+      <section id="tools" class="tools" aria-labelledby="tools-title">
+        <div class="section-heading"><h2 id="tools-title">The toolbox</h2><span>Made to keep things simple</span></div>
+        <article class="tool-card">
+          <div class="tool-copy">
+            <div class="tool-heading"><span class="file-icon"><svg aria-hidden="true"><use href="#i-file" /></svg></span><span class="privacy-badge"><svg aria-hidden="true"><use href="#i-shield" /></svg>100% on your device</span></div>
+            <h3>PDF editor</h3>
+            <p>Get your pages in order. Reorder and remove pages, merge PDFs, and add JPG images. Save it all as a new PDF.</p>
+            <a class="button primary" href="https://pdf-editor.indy256.com/">Open PDF editor <svg aria-hidden="true"><use href="#i-arrow" /></svg></a>
+            <span class="tool-note">No uploads. No account needed.</span>
+          </div>
+          <div class="tool-art" aria-hidden="true">
+            <div class="paper paper-back"></div>
+            <div class="paper paper-front"><span class="paper-label">PDF</span><span class="paper-line long"></span><span class="paper-line"></span><span class="paper-line short"></span><span class="paper-block"></span><span class="paper-line long"></span><span class="paper-line"></span></div>
+            <span class="art-check"><svg viewBox="0 0 24 24"><path d="m5 12 4 4L19 6" /></svg></span>
+          </div>
+        </article>
+      </section>
+
+      <section class="features" aria-label="About the PDF editor">
+        <article><span class="feature-icon"><svg aria-hidden="true"><use href="#i-grid" /></svg></span><h3>Make it your own</h3><p>Arrange, combine, and tidy up<br>your document's pages.</p></article>
+        <article><span class="feature-icon"><svg aria-hidden="true"><use href="#i-shield" /></svg></span><h3>Your files stay yours</h3><p>Your documents stay on your device.<br>Editing happens in your browser.</p></article>
+        <article><span class="feature-icon"><svg aria-hidden="true"><use href="#i-download" /></svg></span><h3>Save and carry on</h3><p>Download your edited PDF.<br>Your original stays untouched.</p></article>
+      </section>
+    </main>
+
+    <footer class="site-footer"><span>indy256<span class="brand-dot">.</span></span><span>Small tools. A little more time for everything else.</span></footer>
+  </body>
+</html>
