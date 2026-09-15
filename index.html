@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#f7f8fa" />
-    <meta name="description" content="Simple browser tools by indy256. Organize PDF pages with the PDF editor and work with Unix time." />
+    <meta name="description" content="Simple browser tools by indy256. Organize PDF pages, work with Unix time, and compare text and lists." />
     <title>indy256 — Simple browser tools</title>
     <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='10' fill='%237460db'/%3E%3Cpath d='m15 13-7 7 7 7m10-14 7 7-7 7' fill='none' stroke='white' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E" />
     <link rel="stylesheet" href="styles.css" />
@@ -25,6 +25,8 @@
       <symbol id="i-code" viewBox="0 0 24 24"><path d="m8 6-6 6 6 6m8-12 6 6-6 6m-3-15-2 18" /></symbol>
       <symbol id="i-file" viewBox="0 0 24 24"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9zM14 3v6h6M8 13h8M8 17h5" /></symbol>
       <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14m-6-6 6 6-6 6" /></symbol>
+      <symbol id="i-text-diff" viewBox="0 0 24 24"><path d="M4 5h16M4 10h10M4 15h6M4 20h6M15 17h6M18 14v6" /></symbol>
+      <symbol id="i-list-diff" viewBox="0 0 24 24"><path d="M3 5h1M7 5h4M3 12h1M7 12h4M3 19h1M7 19h4M15 5h1M19 5h2M15 12h1M19 12h2m-6 7 2 2 4-4" /></symbol>
       <symbol id="i-shield" viewBox="0 0 24 24"><path d="m12 3 8 3v6c0 5-8 9-8 9s-8-4-8-9V6zM8 12l3 3 5-6" /></symbol>
       <symbol id="i-grid" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1.5" /><rect x="14" y="3" width="7" height="7" rx="1.5" /><rect x="3" y="14" width="7" height="7" rx="1.5" /><rect x="14" y="14" width="7" height="7" rx="1.5" /></symbol>
       <symbol id="i-download" viewBox="0 0 24 24"><path d="M12 3v13m-5-5 5 5 5-5M4 16v4a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-4" /></symbol>
@@ -40,7 +42,7 @@
       <section class="intro" aria-labelledby="intro-title">
         <p class="eyebrow">SIMPLE. USEFUL. IN YOUR BROWSER.</p>
         <h1 id="intro-title">Little tools.<br><span>Less busywork.</span></h1>
-        <p>A simpler way to get everyday things done.<br>Tools for documents and time, right in your browser.</p>
+        <p>A simpler way to get everyday things done.<br>Tools for documents, time, text, and lists, right in your browser.</p>
       </section>
 
       <section id="tools" class="tools" aria-labelledby="tools-title">
@@ -70,10 +72,28 @@
             <svg viewBox="0 0 120 120"><circle cx="60" cy="60" r="48" /><path d="M60 29v31l21 13M60 19v5M101 60h-5M60 101v-5M19 60h5" /></svg>
           </div>
         </article>
+        <article class="tool-card">
+          <div class="tool-copy">
+            <div class="tool-heading"><span class="file-icon"><svg aria-hidden="true"><use href="#i-text-diff" /></svg></span></div>
+            <h3>Text diff</h3>
+            <p>Compare two versions of text and find the differences.</p>
+            <a class="button primary" href="https://textdiff.indy256.com/">Open Text diff <svg aria-hidden="true"><use href="#i-arrow" /></svg></a>
+          </div>
+          <div class="tool-art diff-art" aria-hidden="true"><svg><use href="#i-text-diff" /></svg></div>
+        </article>
+        <article class="tool-card">
+          <div class="tool-copy">
+            <div class="tool-heading"><span class="file-icon"><svg aria-hidden="true"><use href="#i-list-diff" /></svg></span></div>
+            <h3>List diff</h3>
+            <p>Compare two lists and find the differences between their items.</p>
+            <a class="button primary" href="https://listdiff.indy256.com/">Open List diff <svg aria-hidden="true"><use href="#i-arrow" /></svg></a>
+          </div>
+          <div class="tool-art diff-art" aria-hidden="true"><svg><use href="#i-list-diff" /></svg></div>
+        </article>
       </section>
 
       <section class="features" aria-label="About the tools">
-        <article><span class="feature-icon"><svg aria-hidden="true"><use href="#i-grid" /></svg></span><h3>A tool for the task</h3><p>Organize your PDF pages<br>or work with Unix time.</p></article>
+        <article><span class="feature-icon"><svg aria-hidden="true"><use href="#i-grid" /></svg></span><h3>A tool for the task</h3><p>Edit PDFs, work with Unix time,<br>or compare text and lists.</p></article>
         <article><span class="feature-icon"><svg aria-hidden="true"><use href="#i-code" /></svg></span><h3>Right in your browser</h3><p>Open a tool and get started.<br>No software to install.</p></article>
         <article><span class="feature-icon"><svg aria-hidden="true"><use href="#i-arrow" /></svg></span><h3>Get on with your day</h3><p>Simple tools for everyday tasks.<br>Choose the one you need above.</p></article>
       </section>
