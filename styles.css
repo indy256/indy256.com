@@ -38,6 +38,9 @@ h1 span { color: var(--purple); }
 .section-heading > span { font-size: 11px; color: var(--muted); }
 .tool-card { display: grid; grid-template-columns: 1.55fr 1fr; gap: 20px; border: 1px solid #ded8ed; background: linear-gradient(125deg, #fff 0%, #fcfaff 100%); border-radius: 15px; padding: 32px; overflow: hidden; }
 .tool-heading { display: flex; align-items: center; gap: 14px; flex-wrap: wrap; }
+.tool-card + .tool-card { margin-top: 20px; }
+.clock-art { display: grid; place-items: center; }
+.clock-art svg { width: 170px; height: 170px; color: var(--purple); stroke-width: 3; }
 .file-icon { width: 39px; height: 45px; background: #f0ebfb; color: var(--purple); display: grid; place-items: center; border-radius: 7px; flex-shrink: 0; }
 .file-icon svg { width: 23px; height: 25px; }
 .privacy-badge { display: inline-flex; align-items: center; gap: 7px; color: #6c687f; background: #efedf7; padding: 8px 10px; border-radius: 7px; font-size: 10px; font-weight: 550; }
